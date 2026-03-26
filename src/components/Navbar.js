@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FiShoppingBag, FiSearch, FiMenu, FiX } from "react-icons/fi";
 import { useCart } from "../context/CartContext";
@@ -15,10 +15,19 @@ export default function Navbar() {
     { to: "/deals", label: "Deals" },
   ];
 
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location.pathname]);
+
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [menuOpen]);
+
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <Link to="/" className="logo">
+        <Link to="/" className="logo" onClick={() => setMenuOpen(false)}>
           <span className="logo-icon">💎</span>
           <span className="logo-text">GlowUp</span>
           <span className="logo-sub">Beauty Store</span>
