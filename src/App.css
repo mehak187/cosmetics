@@ -1086,6 +1086,10 @@ img {
   accent-color: var(--primary);
 }
 
+.mobile-sort {
+  display: none;
+}
+
 .category-tabs {
   display: flex;
   gap: 10px;
@@ -1761,51 +1765,77 @@ img {
   }
 
   .shop-header {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 
   .shop-header h1 {
-    font-size: 28px;
+    font-size: 26px;
+  }
+
+  .shop-header p {
+    font-size: 13px;
   }
 
   .shop-toolbar {
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
+    margin-bottom: 16px;
   }
 
   .search-box {
     min-width: 100%;
-    padding: 10px 16px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    box-shadow: none;
+    border: 1.5px solid #e8e8e8;
+    background: white;
+  }
+
+  .search-box:focus-within {
+    border-color: var(--primary);
   }
 
   .search-box input {
-    font-size: 14px;
+    font-size: 15px;
   }
 
-  .filter-group {
-    width: 100%;
-    padding: 10px 16px;
-  }
-
-  .filter-group select {
-    width: 100%;
-    font-size: 13px;
-  }
-
+  .filter-group,
   .price-filter {
-    width: 100%;
-    padding: 10px 16px;
-    font-size: 12px;
+    display: none;
   }
 
-  .price-filter input[type="range"] {
-    flex: 1;
+  .mobile-sort {
+    display: flex;
+    margin-bottom: 12px;
+  }
+
+  .mobile-sort select {
     width: 100%;
+    padding: 10px 16px;
+    border: 1.5px solid #e8e8e8;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: inherit;
+    color: var(--text);
+    background: white;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+  }
+
+  .mobile-sort select:focus {
+    border-color: var(--primary);
   }
 
   .category-tabs {
-    gap: 6px;
-    margin-bottom: 20px;
+    gap: 8px;
+    margin-bottom: 16px;
     padding-bottom: 4px;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -1819,10 +1849,17 @@ img {
   }
 
   .cat-tab {
-    padding: 8px 14px;
-    font-size: 12px;
+    padding: 9px 16px;
+    font-size: 13px;
     white-space: nowrap;
     flex-shrink: 0;
+    border-radius: 10px;
+    box-shadow: none;
+    border: 1.5px solid #e8e8e8;
+  }
+
+  .cat-tab.active {
+    border-color: transparent;
   }
 
   .no-results {

@@ -98,6 +98,16 @@ export default function Shop() {
         </div>
       </div>
 
+      <div className="mobile-sort">
+        <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
+          <option value="default">Sort By</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+          <option value="rating">Top Rated</option>
+          <option value="popular">Most Popular</option>
+        </select>
+      </div>
+
       <div className="category-tabs">
         {categories.map((cat) => (
           <button
