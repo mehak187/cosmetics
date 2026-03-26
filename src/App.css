@@ -1538,22 +1538,19 @@ img {
     padding: 5px 14px;
   }
 
-  /* --- Product Grid Mobile - Single Column Horizontal Cards --- */
+  /* --- Product Grid Mobile - Full Width Vertical Cards --- */
   .products-section {
-    padding: 48px 0;
+    padding: 40px 0;
   }
 
   .product-grid {
     grid-template-columns: 1fr;
-    gap: 14px;
+    gap: 16px;
     padding: 0 16px;
   }
 
   .product-card {
-    border-radius: 14px;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
+    border-radius: 16px;
   }
 
   .product-card:hover {
@@ -1561,107 +1558,76 @@ img {
   }
 
   .product-image-wrap {
-    width: 130px;
-    min-width: 130px;
-    height: auto;
-    min-height: 160px;
-  }
-
-  .product-image {
-    border-radius: 0;
+    height: 220px;
   }
 
   .product-info {
-    padding: 14px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1;
-    min-width: 0;
+    padding: 16px;
   }
 
   .product-category {
-    font-size: 10px;
-    letter-spacing: 0.5px;
+    font-size: 11px;
+    letter-spacing: 0.8px;
   }
 
   .product-name {
-    font-size: 15px;
-    margin: 4px 0;
+    font-size: 17px;
+    margin: 6px 0;
     line-height: 1.3;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 
   .product-desc {
-    font-size: 12px;
-    margin-bottom: 6px;
-    -webkit-line-clamp: 1;
+    font-size: 13px;
+    margin-bottom: 8px;
+    -webkit-line-clamp: 2;
   }
 
   .product-rating {
-    margin-bottom: 8px;
-    font-size: 12px;
-    gap: 3px;
-  }
-
-  .product-rating svg {
-    width: 12px;
-    height: 12px;
-  }
-
-  .review-count {
-    font-size: 11px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    gap: 4px;
   }
 
   .product-price {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .original-price {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .product-price-row {
     flex-direction: row;
     align-items: center;
-    gap: 10px;
   }
 
   .add-to-cart-btn {
-    padding: 8px 16px;
-    font-size: 12px;
-    border-radius: 8px;
-    white-space: nowrap;
+    padding: 10px 22px;
+    font-size: 14px;
+    border-radius: 10px;
   }
 
   .product-badge {
-    padding: 3px 8px;
-    font-size: 9px;
-    top: 8px;
-    left: 8px;
+    padding: 4px 10px;
+    font-size: 10px;
+    top: 10px;
+    left: 10px;
   }
 
   .discount-badge {
-    padding: 3px 8px;
-    font-size: 9px;
-    top: 8px;
-    right: 8px;
+    padding: 4px 10px;
+    font-size: 10px;
+    top: 10px;
+    right: 10px;
   }
 
   .wishlist-btn {
     opacity: 1;
     transform: translateY(0);
-    width: 30px;
-    height: 30px;
-    bottom: 8px;
-    right: 8px;
-  }
-
-  .wishlist-btn svg {
-    width: 14px;
-    height: 14px;
+    width: 34px;
+    height: 34px;
+    bottom: 10px;
+    right: 10px;
   }
 
   /* --- Categories Section Mobile --- */
@@ -2043,24 +2009,22 @@ img {
     font-size: 10px;
   }
 
-  /* Product cards smaller on small phones */
+  /* Product cards on small phones */
   .product-grid {
-    gap: 10px;
+    gap: 14px;
     padding: 0 12px;
   }
 
   .product-image-wrap {
-    width: 110px;
-    min-width: 110px;
-    min-height: 140px;
+    height: 200px;
   }
 
   .product-info {
-    padding: 10px;
+    padding: 14px;
   }
 
   .product-name {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .product-desc {
@@ -2068,17 +2032,16 @@ img {
   }
 
   .product-price {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .original-price {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .add-to-cart-btn {
-    padding: 7px 12px;
-    font-size: 11px;
-    gap: 4px;
+    padding: 9px 18px;
+    font-size: 13px;
   }
 
   /* Categories small */
@@ -2223,30 +2186,24 @@ img {
   }
 
   .product-grid {
-    gap: 8px;
+    gap: 12px;
   }
 
   .product-image-wrap {
-    width: 100px;
-    min-width: 100px;
-    min-height: 120px;
-  }
-
-  .product-info {
-    padding: 8px;
+    height: 180px;
   }
 
   .product-name {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .product-price {
-    font-size: 13px;
+    font-size: 17px;
   }
 
   .add-to-cart-btn {
-    padding: 6px 10px;
-    font-size: 10px;
+    padding: 8px 16px;
+    font-size: 12px;
   }
 
   .section-header h2 {
